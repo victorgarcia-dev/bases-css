@@ -1,0 +1,95 @@
+/* =======================================================
+   Estilos base (Ya configurados)
+   ======================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f8fafc;
+  color: #334155;
+  font-family: sans-serif;
+}
+.contenido-largo {
+  padding: 40px;
+  text-align: center;
+}
+.zona-pruebas {
+  margin: 50px auto;
+  max-width: 600px;
+}
+.texto-relleno {
+  color: #94a3b8;
+  font-size: 1.5rem;
+  margin-top: 50px;
+}
+
+/* =======================================================
+   👇 PASO 1 y 2: EL COMBO RELATIVE / ABSOLUTE 👇 
+   ======================================================= */
+
+.caja-padre {
+  background-color: #e2e8f0;
+  border: 3px solid #94a3b8;
+  border-radius: 12px;
+  height: 300px;
+  padding: 20px;
+
+  /* EL ANCLA: Le decimos al hijo absoluto "no te salgas de esta caja" */
+  /* position: relative; */
+}
+
+.caja-hija {
+  background-color: #3b82f6;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  width: 150px;
+
+  /* PASO 1: Relative (Se mueve desde su origen, pero deja el hueco) */
+  /* position: relative; */
+  /* top: 30px; */
+  /* left: 50px; */
+
+  /* PASO 2: Absolute (Comenta el Paso 1 y enciende este. Se sale del flujo) */
+  /* position: absolute; */
+  /* top: -20px; */ /* ¡Se puede salir del padre con valores negativos! */
+  /* right: -20px; */
+}
+
+/* =======================================================
+   👇 PASO 3: FIXED (Fijo a la cámara) 👇 
+   ======================================================= */
+
+.btn-flotante {
+  background-color: #22c55e;
+  border-radius: 50px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-decoration: none;
+
+  /* Lo clavamos en la esquina inferior derecha para siempre */
+  /* position: fixed; */
+  /* bottom: 30px; */
+  /* right: 30px; */
+}
+
+/* =======================================================
+   👇 PASO 4: STICKY (El pegajoso) 👇 
+   ======================================================= */
+
+.header-pegajoso {
+  background-color: #0f172a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  /* Es normal hasta que haces scroll y toca el techo (top: 0) */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 100; */ /* Asegura que quede por encima del texto al hacer scroll */
+}

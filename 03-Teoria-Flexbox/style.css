@@ -1,0 +1,56 @@
+/* --- Estilos base (Solo para que se vea bonito) --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #1e293b;
+  color: white;
+  padding: 40px;
+}
+.header-teoria {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.hijo {
+  background-color: #3b82f6;
+  color: white;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid #60a5fa;
+}
+
+/* =======================================================
+   👇 LA CLASE EN VIVO: EL CONTENEDOR FLEX 👇 
+   ======================================================= */
+
+.padre-flex {
+  background-color: #0f172a;
+  border: 2px dashed #475569;
+  padding: 20px;
+  min-height: 400px; /* Le damos altura para ver el centrado vertical */
+  border-radius: 12px;
+
+  /* PASO 1: Encender Flexbox (Las cajas se ponen en fila automáticamente) */
+  /* display: flex; */
+
+  /* PASO 2: Dirección (Probar cambiar a 'column') */
+  /* flex-direction: row; */
+
+  /* PASO 3: Espaciado (hueco entre las cajas sin usar margin) */
+  /* gap: 20px; */
+
+  /* PASO 4: Eje Principal (Horizontal) -> Descomentar uno por uno */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+
+  /* PASO 5: Eje Cruzado (Vertical) -> Probar cómo se mueven arriba/abajo */
+  /* align-items: center; */
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+}

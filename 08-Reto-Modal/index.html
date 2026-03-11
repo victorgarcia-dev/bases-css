@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reto Posicionamiento - Modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="contenido-fondo">
+      <h1>Bienvenido a la Web</h1>
+      <p>
+        Este es el contenido principal de la página. Si intentas hacer scroll,
+        verás que el modal se queda fijo en la pantalla bloqueando todo.
+      </p>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <p>Sigue haciendo scroll, el modal no se moverá...</p>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </main>
+
+    <div class="modal-overlay">
+      <div class="modal-box">
+        <button class="btn-cerrar">✖</button>
+        <h2>¡Oferta Exclusiva!</h2>
+        <p>
+          Suscríbete a nuestro boletín y obtén un 20% de descuento en tu primera
+          compra.
+        </p>
+        <input
+          type="email"
+          placeholder="Tu correo electrónico"
+          class="input-email"
+        />
+        <button class="btn-suscribir">Quiero el descuento</button>
+      </div>
+    </div>
+  </body>
+</html>

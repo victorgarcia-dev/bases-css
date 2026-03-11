@@ -1,0 +1,104 @@
+/* ==========================================
+   1. EL SELECTOR UNIVERSAL Y EL RESETEO
+   ========================================== */
+/* Profe: "Cada navegador le pone márgenes invisibles a la página por defecto. 
+  El asterisco (*) selecciona TODOS los elementos y los limpia. Es el paso 1 de cualquier proyecto."
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Fundamental para que el borde no agrande la caja */
+}
+
+/* ==========================================
+   2. SELECTORES DE ETIQUETA Y TIPOGRAFÍA
+   ========================================== */
+/* Profe: "Si pongo el nombre de la etiqueta directo (body), afecta a TODO el cuerpo."
+  - font-family: Cambia la fuente.
+  - background-color: Fondo de la página. (Se pueden usar nombres de colores, HEX #, o RGB).
+*/
+body {
+  background-color: #f0f4f8; /* Un gris azulado muy claro */
+  font-family: "Arial", sans-serif;
+  color: #333333; /* Gris oscuro para el texto, es mejor que negro puro para leer */
+  line-height: 1.6; /* Separación entre renglones */
+}
+
+/* ==========================================
+   3. SELECTORES DE ID (#) Y CLASE (.)
+   ========================================== */
+/* Profe: "El ID (#) es un DNI, único e irrepetible. La Clase (.) es una tribu, se le puede poner a muchos."
+*/
+#titulo-principal {
+  color: #2c3e50;
+  text-align: center;
+  font-size: 3rem; /* 1rem = 16px por defecto. 3rem = 48px */
+  margin-top: 20px;
+}
+
+.subtitulo {
+  text-align: center;
+  font-style: italic;
+  color: #7f8c8d;
+}
+
+/* ==========================================
+   4. EL MODELO DE CAJA (BOX MODEL) - ¡CRÍTICO!
+   ========================================== */
+/* Profe: "Acá está el secreto de la web. Padding empuja hacia ADENTRO. Margin empuja hacia AFUERA. 
+  El Border es la pared que divide ambos."
+*/
+.caja-basica {
+  background-color: #e74c3c;
+  color: white;
+  width: 300px; /* Ancho estricto */
+  height: 100px; /* Alto estricto */
+  /* Fíjense que el texto está pegado a los bordes y las cajas se tocan entre sí */
+}
+
+.caja-espaciada {
+  background-color: #3498db;
+  color: white;
+  width: 300px;
+
+  /* PADDING: Relleno interno (Separa el texto de la pared de la caja) */
+  padding: 20px;
+
+  /* BORDER: La pared de la caja (Grosor, Estilo, Color) */
+  border: 5px solid #2980b9;
+  border-radius: 10px; /* Redondea las esquinas */
+
+  /* MARGIN: Espacio externo (Empuja a los vecinos lejos de mí) */
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  /* TRUCO SENIOR: Centrar una caja en la pantalla */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========================================
+   5. PSEUDO-CLASES (Interactividad Visual)
+   ========================================== */
+/* Profe: "Podemos cambiar el CSS dependiendo de lo que haga el usuario. 
+  :hover es cuando pasa el mouse por encima."
+*/
+.btn-interactivo {
+  display: block; /* Obliga al botón a comportarse como una caja entera */
+  margin: 0 auto; /* Lo centra */
+  background-color: #2ecc71;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer; /* Cambia la flechita por la manito al pasar por encima */
+  transition: all 0.3s ease; /* Hace que el cambio de color sea suave, no de golpe */
+}
+
+/* El estado "Hover" (cuando el mouse lo toca) */
+.btn-interactivo:hover {
+  background-color: #27ae60; /* Un verde más oscuro */
+  transform: translateY(-5px); /* Lo levanta un poquito hacia arriba */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Le agrega sombra */
+}

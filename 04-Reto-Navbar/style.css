@@ -1,0 +1,78 @@
+/* =======================================================
+   Estilos base (Ya configurados)
+   ======================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f5f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #334155;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #3b82f6;
+}
+
+.logo h2 {
+  color: #0f172a;
+  font-size: 1.8rem;
+}
+
+.logo span {
+  color: #3b82f6; /* El puntito azul del logo */
+}
+
+/* Botones pre-diseñados */
+.btn-registro {
+  background-color: #3b82f6;
+  border-radius: 6px;
+  color: white;
+  padding: 10px 20px;
+}
+
+.btn-registro:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.contenido-demo {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contenido-demo h1 {
+  margin-bottom: 10px;
+}
+
+/* =======================================================
+   👇 ¡TU TURNO! APLICA FLEXBOX PARA ALINEAR EL NAVBAR 👇 
+   ======================================================= */
+
+/* 1. El Contenedor Principal */
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 40px;
+
+  /* Enciende Flexbox y distribuye los elementos */
+}
+
+/* 2. La Lista de Enlaces */
+.nav-links {
+  /* Haz que los enlaces estén en fila y sepáralos */
+}
+
+/* 3. El grupo de botones */
+.nav-botones {
+  /* Haz que los botones estén en fila y sepáralos */
+}
